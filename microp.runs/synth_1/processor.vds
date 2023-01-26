@@ -1,0 +1,515 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jan 26 14:33:33 2023
+# Process ID: 6952
+# Current directory: C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.runs/synth_1
+# Command line: vivado.exe -log processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor.tcl
+# Log file: C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.runs/synth_1/processor.vds
+# Journal file: C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source processor.tcl -notrace
+Command: synth_design -top processor -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8312 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 344.504 ; gain = 100.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'processor' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/processor.sv:23]
+INFO: [Synth 8-638] synthesizing module 'button_debouncer' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/button_debouncer.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/button_debouncer.sv:42]
+INFO: [Synth 8-256] done synthesizing module 'button_debouncer' (1#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/button_debouncer.sv:23]
+INFO: [Synth 8-638] synthesizing module 'seven_segment_display' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/seven_segment_display.sv:4]
+INFO: [Synth 8-256] done synthesizing module 'seven_segment_display' (2#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/seven_segment_display.sv:4]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/FSM.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (3#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/FSM.sv:23]
+INFO: [Synth 8-638] synthesizing module 'DataPath' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/DataPath.sv:23]
+INFO: [Synth 8-638] synthesizing module 'General1x3Reg' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/General1x3Reg.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'General1x3Reg' (4#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/General1x3Reg.sv:23]
+INFO: [Synth 8-638] synthesizing module 'incrementer' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/General1x3Reg.sv:42]
+INFO: [Synth 8-256] done synthesizing module 'incrementer' (5#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/General1x3Reg.sv:42]
+INFO: [Synth 8-638] synthesizing module 'instruction_memory' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/instruction_memory.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'instruction_memory' (6#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/instruction_memory.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux2_1bit' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux2_1bit.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'mux2_1bit' (7#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux2_1bit.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux2_12bit' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux2_12bit.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'mux2_12bit' (8#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux2_12bit.sv:23]
+INFO: [Synth 8-638] synthesizing module 'IR' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/IR.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'IR' (9#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/IR.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux8_3bit' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux8_3bit.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'mux8_3bit' (10#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux8_3bit.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux2_3bit' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux2_3bit.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'mux2_3bit' (11#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux2_3bit.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux8_4bit' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux8_4bit.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'mux8_4bit' (12#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux8_4bit.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux2_4bit' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux2_4bit.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'mux2_4bit' (13#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux2_4bit.sv:23]
+INFO: [Synth 8-638] synthesizing module 'register_file' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/register_file.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (14#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/register_file.sv:23]
+INFO: [Synth 8-638] synthesizing module 'data_memory' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/data_memory.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'data_memory' (15#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/data_memory.sv:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/ALU.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (16#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/ALU.sv:23]
+INFO: [Synth 8-638] synthesizing module 'less_than_comparator_for_unsigned_numbers' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/less_than_comparator_for_unsigned_numbers.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'less_than_comparator_for_unsigned_numbers' (17#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/less_than_comparator_for_unsigned_numbers.sv:23]
+INFO: [Synth 8-638] synthesizing module 'equal_comparator_for_unsigned_numbers' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/equal_comparator_for_unsigned_numbers.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'equal_comparator_for_unsigned_numbers' (18#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/equal_comparator_for_unsigned_numbers.sv:23]
+INFO: [Synth 8-638] synthesizing module 'decrementer' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/decrementer.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'decrementer' (19#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/decrementer.sv:23]
+INFO: [Synth 8-638] synthesizing module 'greater_than_comparator_for_unsigned_numbers' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/greater_than_comparator_for_unsigned_numbers.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'greater_than_comparator_for_unsigned_numbers' (20#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/greater_than_comparator_for_unsigned_numbers.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux4_4bit' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux4_4bit.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'mux4_4bit' (21#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/mux4_4bit.sv:23]
+INFO: [Synth 8-638] synthesizing module 'sort_reg_4bit' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/sort_reg_4bit.sv:22]
+INFO: [Synth 8-256] done synthesizing module 'sort_reg_4bit' (22#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/sort_reg_4bit.sv:22]
+INFO: [Synth 8-638] synthesizing module 'less_than_comparator_for_signed_numbers' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/less_than_comparator_for_signed_numbers.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'less_than_comparator_for_signed_numbers' (23#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/less_than_comparator_for_signed_numbers.sv:23]
+INFO: [Synth 8-638] synthesizing module 'sort_decoder' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/sort_decoder.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'sort_decoder' (24#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/sort_decoder.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'DataPath' (25#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/DataPath.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'processor' (26#1) [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/processor.sv:23]
+WARNING: [Synth 8-3331] design FSM has unconnected port IR[8]
+WARNING: [Synth 8-3331] design FSM has unconnected port IR[7]
+WARNING: [Synth 8-3331] design FSM has unconnected port IR[6]
+WARNING: [Synth 8-3331] design FSM has unconnected port IR[5]
+WARNING: [Synth 8-3331] design FSM has unconnected port IR[4]
+WARNING: [Synth 8-3331] design FSM has unconnected port IR[3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 398.113 ; gain = 154.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 398.113 ; gain = 154.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 398.113 ; gain = 154.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/button_debouncer.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element refresh_counter_reg was removed.  [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/seven_segment_display.sv:27]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FSM'
+INFO: [Synth 8-5546] ROM "reset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cameFromSort" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rbb1or0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "resetSM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LastTakenFromSm_Dec_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SM_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "outputs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "displayEnableReal" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'dp_reg' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/seven_segment_display.sv:43]
+WARNING: [Synth 8-327] inferring latch for variable 'LED_BCD_reg' [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/seven_segment_display.sv:44]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S1 |                            00000 |                            00000
+                      S2 |                            00001 |                            00001
+                      S4 |                            00010 |                            00011
+                      S3 |                            00011 |                            00010
+                      S5 |                            00100 |                            00100
+                      S6 |                            00101 |                            00101
+                     S20 |                            00110 |                            10011
+                      S7 |                            00111 |                            00110
+                      S8 |                            01000 |                            00111
+                      S9 |                            01001 |                            01000
+                     S10 |                            01010 |                            01001
+                     S11 |                            01011 |                            01010
+                     S12 |                            01100 |                            01011
+                     S21 |                            01101 |                            10100
+                     S13 |                            01110 |                            01100
+                     S14 |                            01111 |                            01101
+                     S15 |                            10000 |                            01110
+                     S16 |                            10001 |                            01111
+                     S17 |                            10010 |                            10000
+                     S18 |                            10011 |                            10001
+                     S19 |                            10100 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 434.223 ; gain = 190.629
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 10    
++---Registers : 
+	               12 Bit    Registers := 11    
+	                4 Bit    Registers := 43    
+	                3 Bit    Registers := 18    
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   9 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 18    
+	  41 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 143   
+	   4 Input      4 Bit        Muxes := 2     
+	  20 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 36    
+	   5 Input      2 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 7     
+	  21 Input      1 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 2     
+	  17 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 32    
+	  13 Input      1 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+	  20 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module processor 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module button_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module seven_segment_display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module FSM 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  41 Input      5 Bit        Muxes := 1     
+	  20 Input      3 Bit        Muxes := 1     
+	  21 Input      1 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 2     
+	  17 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 13    
+	  13 Input      1 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	  20 Input      1 Bit        Muxes := 3     
+Module General1x3Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 3     
+Module incrementer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+Module instruction_memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 16    
+Module mux2_1bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mux2_12bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module IR 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module mux2_3bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module mux2_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module register_file 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 24    
+Module data_memory 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 17    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 64    
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module decrementer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+Module mux4_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module sort_reg_4bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module less_than_comparator_for_signed_numbers 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module sort_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input     16 Bit        Muxes := 1     
+Module DataPath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element fsm/s15_k_reg was removed.  [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/FSM.sv:154]
+WARNING: [Synth 8-6014] Unused sequential element up/timer_reg was removed.  [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/button_debouncer.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element mid/timer_reg was removed.  [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/button_debouncer.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element low/timer_reg was removed.  [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/button_debouncer.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element right/timer_reg was removed.  [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/button_debouncer.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element left/timer_reg was removed.  [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/button_debouncer.sv:37]
+WARNING: [Synth 8-6014] Unused sequential element displayy/refresh_counter_reg was removed.  [C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.srcs/sources_1/new/seven_segment_display.sv:27]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 627.430 ; gain = 383.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 627.430 ; gain = 383.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 627.473 ; gain = 383.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.473 ; gain = 383.879
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.473 ; gain = 383.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.473 ; gain = 383.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.473 ; gain = 383.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.473 ; gain = 383.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.473 ; gain = 383.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    40|
+|3     |LUT1   |   126|
+|4     |LUT2   |    39|
+|5     |LUT3   |    46|
+|6     |LUT4   |   269|
+|7     |LUT5   |    89|
+|8     |LUT6   |   293|
+|9     |MUXF7  |    23|
+|10    |FDCE   |    20|
+|11    |FDRE   |   440|
+|12    |FDSE   |    60|
+|13    |LD     |     5|
+|14    |IBUF   |    22|
+|15    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+----------------------+------+
+|      |Instance                  |Module                |Cells |
++------+--------------------------+----------------------+------+
+|1     |top                       |                      |  1485|
+|2     |  datapath                |DataPath              |   932|
+|3     |    IM                    |instruction_memory    |   168|
+|4     |    LastTakenFromSMDecReg |General1x3Reg         |    25|
+|5     |    LastTakenFromSMIncReg |General1x3Reg_4       |    24|
+|6     |    NoOfDisplayedReg      |General1x3Reg_5       |    11|
+|7     |    RF                    |register_file         |   157|
+|8     |    SortMemory0           |sort_reg_4bit         |    15|
+|9     |    SortMemory1           |sort_reg_4bit_6       |    15|
+|10    |    SortMemory2           |sort_reg_4bit_7       |    12|
+|11    |    SortMemory3           |sort_reg_4bit_8       |    15|
+|12    |    SortMemory4           |sort_reg_4bit_9       |    19|
+|13    |    SortMemory5           |sort_reg_4bit_10      |    20|
+|14    |    SortMemory6           |sort_reg_4bit_11      |    17|
+|15    |    SortMemory7           |sort_reg_4bit_12      |    20|
+|16    |    addressToWriteReg     |General1x3Reg_13      |    14|
+|17    |    dataMemory            |data_memory           |   152|
+|18    |    ir                    |IR                    |    97|
+|19    |    lastDisplayedReg      |General1x3Reg_14      |    10|
+|20    |    lastTakenFromRFReg    |General1x3Reg_15      |    11|
+|21    |    nolabel_line106       |General1x3Reg_16      |   113|
+|22    |    pc                    |General1x3Reg_17      |     8|
+|23    |    shouldBeTakenReg      |General1x3Reg_18      |     9|
+|24    |  displayy                |seven_segment_display |    40|
+|25    |  fsm                     |FSM                   |   132|
+|26    |  left                    |button_debouncer      |    69|
+|27    |  low                     |button_debouncer_0    |    69|
+|28    |  mid                     |button_debouncer_1    |    68|
+|29    |  right                   |button_debouncer_2    |    68|
+|30    |  up                      |button_debouncer_3    |    72|
++------+--------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.473 ; gain = 383.879
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.473 ; gain = 383.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 627.473 ; gain = 383.879
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  LD => LDCE: 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+80 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 701.180 ; gain = 470.555
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Onur Ozdemir/OneDrive/Masast/microp/microp.runs/synth_1/processor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file processor_utilization_synth.rpt -pb processor_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 701.180 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 26 14:33:55 2023...
